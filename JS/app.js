@@ -26,7 +26,7 @@ function saludar(nombre, apellido) {
 // Validar si se ingresaron datos en ambos campos
 if (esCadenaVacia(nombre) || esCadenaVacia(apellido)) {
     alert('Por favor, ingresa tu nombre y apellido.');
-    window.location.href = "/Entrega 01/solicitud.html";
+    window.location.href = "../solicitud.html";
 } else {
     // Obtener el formulario y los elementos donde se mostrará la nota final
     const formulario = document.getElementById('calculadora');
