@@ -8,17 +8,20 @@ function esNumeroValido(entrada) {
 }
 // Función para validar si una cadena contiene solo letras
 function contieneSoloLetras(cadena) {
-    return /^[a-zA-Z\s]*$/.test(cadena);
+    return /^[a-zA-Zá-úÁ-ÚñÑ\s]*$/.test(cadena);
 }
-// Solicitar el nombre y el apellido usando prompt
-let nombre = "";
-let apellido = "";
-do {
+// Solicitar el nombre y el apellido usando un bucle while
+let nombre, apellido;
+while (true) {
     nombre = prompt("Por favor, ingresa tu nombre:");
-} while (!contieneSoloLetras(nombre));
-do {
     apellido = prompt("Por favor, ingresa tu apellido:");
-} while (!contieneSoloLetras(apellido));
+
+    if (!esCadenaVacia(nombre) && !esCadenaVacia(apellido) && contieneSoloLetras(nombre) && contieneSoloLetras(apellido)) {
+        break; // Sal del bucle si se ingresaron datos válidos
+    } else {
+        alert('Por favor, ingresa tanto tu nombre como tu apellido sin números.');
+    }
+}
 // Función para mostrar un mensaje de saludo
 function saludar(nombre, apellido) {
     alert(`¡Hola, ${nombre} ${apellido}!`);
@@ -26,7 +29,7 @@ function saludar(nombre, apellido) {
 // Validar si se ingresaron datos en ambos campos
 if (esCadenaVacia(nombre) || esCadenaVacia(apellido)) {
     alert('Por favor, ingresa tu nombre y apellido.');
-    window.location.href = "../solicitud.html";
+
 } else {
     // Obtener el formulario y los elementos donde se mostrará la nota final
     const formulario = document.getElementById('calculadora');
