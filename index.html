@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Notas</title>
+</head>
+<body>
+    <h1>Calculadora de Notas</h1>
+
+    <p>Instrucciones: Escribe tu notas/calificaciones en los campos de la izquierda, y a la derecha el porcentaje que vale esa nota/calificación</p>
+    <p>Si ocupaste menos de los 10 campos, rellenar con 0 (ceros)</p>
+    <form id="calculadora">
+        <!-- Campos para ingresar cada nota y su porcentaje -->
+        <!-- Nota 1 -->
+        <label for="nota1">Nota 1:</label>
+        <input type="number" id="nota1" step="0.01" required>
+        <label for="porcentaje1">Porcentaje (%):</label>
+        <input type="number" id="porcentaje1" step="0.01" required>
+        <br>
+        <!-- Nota 2 -->
+        <label for="nota2">Nota 2:</label>
+        <input type="number" id="nota2" step="0.01" required>
+        <label for="porcentaje2">Porcentaje (%):</label>
+        <input type="number" id="porcentaje2" step="0.01" required>
+        <br>
+        <!-- Nota 3 -->
+        <label for="nota3">Nota 3:</label>
+        <input type="number" id="nota3" step="0.01" required>
+        <label for="porcentaje3">Porcentaje (%):</label>
+        <input type="number" id="porcentaje3" step="0.01" required>
+        <br>
+        <!-- Nota 4 -->
+        <label for="nota4">Nota 4:</label>
+        <input type="number" id="nota4" step="0.01" required>
+        <label for="porcentaje4">Porcentaje (%):</label>
+        <input type="number" id="porcentaje4" step="0.01" required>
+        <br>
+        <!-- Nota 5 -->
+        <label for="nota5">Nota 5:</label>
+        <input type="number" id="nota5" step="0.01" required>
+        <label for="porcentaje5">Porcentaje (%):</label>
+        <input type="number" id="porcentaje5" step="0.01" required>
+        <br>
+        <!-- Nota 6 -->
+        <label for="nota6">Nota 6:</label>
+        <input type="number" id="nota6" step="0.01" required>
+        <label for="porcentaje6">Porcentaje (%):</label>
+        <input type="number" id="porcentaje6" step="0.01" required>
+        <br>
+        <!-- Nota 7 -->
+        <label for="nota7">Nota 7:</label>
+        <input type="number" id="nota7" step="0.01" required>
+        <label for="porcentaje7">Porcentaje (%):</label>
+        <input type="number" id="porcentaje7" step="0.01" required>
+        <br>
+        <!-- Nota 8 -->
+        <label for="nota8">Nota 8:</label>
+        <input type="number" id="nota8" step="0.01" required>
+        <label for="porcentaje8">Porcentaje (%):</label>
+        <input type="number" id="porcentaje8" step="0.01" required>
+        <br>
+        <!-- Nota 9 -->
+        <label for="nota9">Nota 9:</label>
+        <input type="number" id="nota9" step="0.01" required>
+        <label for="porcentaje9">Porcentaje (%):</label>
+        <input type="number" id="porcentaje9" step="0.01" required>
+        <br>
+        <!-- Nota 10 -->
+        <label for="nota10">Nota 10:</label>
+        <input type="number" id="nota10" step="0.01" required>
+        <label for="porcentaje10">Porcentaje (%):</label>
+        <input type="number" id="porcentaje10" step="0.01" required>
+        <br>
+
+        <input type="submit" value="Calcular">
+    </form>
+    <p>Nombre: <span id="nombreCompleto">Nombre Apellido</span></p>
+    <p>Nota Final: <span id="notaFinal" >0</span></p>
+
+    <script src="./JS/app.js"></script>
+</body>
+</html>
