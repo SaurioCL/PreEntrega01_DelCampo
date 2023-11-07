@@ -8,7 +8,7 @@ function esNumeroValido(entrada) {
 }
 // Función para validar si una cadena contiene solo letras
 function contieneSoloLetras(cadena) {
-    return /^[a-zA-Zá-úÁ-ÚñÑ\s]*$/.test(cadena);
+    return /^[a-zA-Zá-únÑ\s]*$/.test(cadena);
 }
 // Solicitar el nombre y el apellido usando un bucle while
 let nombre, apellido;
